@@ -1,19 +1,14 @@
 $(function() {
   $("#Kontakt").submit(function(e) {
+
     e.preventDefault();
+
     var name = $("#name").val();
-    var email = $("#email").val();
+    var subject = $("#subject").val();
     var message = $("#message").val();
 
-    var varData = "name=" + name + "&email=" + email + "&message=" + message;
+    message = message.replace(new RegExp('\r?\n','g'), "%0D%0A");
+    window.open(`mailto:totallyturing@gmail.com?subject=${name}: ${subject}&body=${message}`);
 
-    $.ajax({
-      type: "POST",
-      url: "Kontakt.php",
-      data: varData,
-      success: function() {
-        alert("E-Mail gesendet!");
-      }
-    });
   });
 });
