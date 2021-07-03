@@ -64,8 +64,8 @@ img {
     display: grid;
     grid-template-areas:
       "name message message message"
-      "email message message message"
-      ". message message message";
+      "subject message message message"
+      "submit message message message";
     column-gap: 2%;
     input,
     textarea {
@@ -82,11 +82,14 @@ img {
     .name {
       grid-area: name;
     }
-    .email {
-      grid-area: email;
+    .subject {
+      grid-area: subject;
     }
     .message {
       grid-area: message;
+    }
+    .submit {
+      grid-area: submit;
     }
     textarea {
       width: 100%;
