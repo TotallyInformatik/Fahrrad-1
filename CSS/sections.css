@@ -1,0 +1,80 @@
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  padding: 70px 0;
+  width: 100%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+.section1 article,
+.section2 article,
+.section3 article,
+.section4 article,
+.section5 article,
+.section6 article {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5vw;
+}
+.section1 article p,
+.section2 article p,
+.section3 article p,
+.section4 article p,
+.section5 article p,
+.section6 article p {
+  text-align: justify;
+  font-size: 1.1em;
+}
+.section1 article h2,
+.section2 article h2,
+.section3 article h2,
+.section4 article h2,
+.section5 article h2,
+.section6 article h2 {
+  font-size: 2em;
+}
+
+.section1 {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), #1a1a1a;
+}
+
+.section2 {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), #3d3d3d;
+}
+
+.section3 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section4 {
+  background: linear-gradient(115deg, rgba(121, 121, 121, 0.2) 0%, rgba(121, 121, 121, 0.2) 14%, rgba(135, 135, 135, 0.1) 14%, rgba(135, 135, 135, 0.1) 26%, rgba(113, 112, 112, 0.2) 26%, rgba(113, 112, 112, 0.2) 30%, rgba(74, 74, 74, 0.1) 30%, rgba(74, 74, 74, 0.1) 40%), linear-gradient(-45deg, rgba(121, 121, 121, 0.2) 0%, rgba(121, 121, 121, 0.2) 14%, rgba(135, 135, 135, 0.1) 14%, rgba(135, 135, 135, 0.1) 26%, rgba(113, 112, 112, 0.2) 26%, rgba(113, 112, 112, 0.2) 30%, rgba(74, 74, 74, 0.1) 30%, rgba(74, 74, 74, 0.1) 40%), linear-gradient(135deg, rgba(121, 121, 121, 0.2) 0%, rgba(121, 121, 121, 0.2) 14%, rgba(135, 135, 135, 0.1) 14%, rgba(135, 135, 135, 0.1) 26%, rgba(113, 112, 112, 0.2) 26%, rgba(113, 112, 112, 0.2) 30%, rgba(74, 74, 74, 0.1) 30%, rgba(74, 74, 74, 0.1) 40%), linear-gradient(-95deg, rgba(121, 121, 121, 0.2) 0%, rgba(121, 121, 121, 0.2) 14%, rgba(135, 135, 135, 0.1) 14%, rgba(135, 135, 135, 0.1) 26%, transparent 26%), #3d3d3d;
+}
+
+.section5 {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.025) 0%, rgba(0, 0, 0, 0.025) 3%, transparent 3%, transparent 7.5%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.025) 0%, rgba(0, 0, 0, 0.025) 3%, transparent 3%, transparent 7.5%), #333333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+}
+.section5 article {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section6 {
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.015) 5%, transparent 5%, transparent 12.5%), #2b2b2b;
+}
+
+@media screen and (max-width: 1200px) {
+  .section1 article,
+.section2 article,
+.section3 article,
+.section4 article,
+.section5 article,
+.section6 article {
+    padding: 10vw;
+  }
+}/*# sourceMappingURL=sections.css.map */

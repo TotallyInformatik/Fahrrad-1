@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autor / Webseite</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="../../CSS/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/navigation.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/sections.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/animations.css" rel="stylesheet" type="text/css">
+    <script src="../../Javascript/menu.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.3,
+          once: true
+        });
+      });
+    </script>
+
+    <link href="individual.css" rel="stylesheet" type="text/css">
+    <script src="Kontakt.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Fahrrad -1</h2>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="../../index.html">Home</a></li>
+          <li class="nav-link">
+            <a href="../WasMachtMan/WasMachtMan.html">Was macht man?</a>
+          </li>
+          <li class="nav-link">
+            <a href="../WarumEinrad/WarumEinrad.html">Warum Einrad?</a>
+          </li>
+          <li class="nav-link">
+            <a href="../WieAnfangen/WieAnfangen.html">Wie anfangen?</a>
+          </li>
+          <li class="nav-link">
+            <a href="../Tutorial/Tutorial.html">Tutorial</a>
+          </li>
+          <li class="nav-link">
+            <a href="../Galerie/Galerie.html">Galerie</a>
+          </li>
+          <li class="nav-link-chosen"><a href="#">Autor/Webseite</a></li>
+        </ul>
+      </nav>
+      <div class="nav-btn">
+        <div class="space"></div>
+        <div class="nav-btn-dec"></div>
+        <div class="nav-btn-dec"></div>
+        <div class="nav-btn-dec"></div>
+      </div>
+    </header>
+    <main>
+      <section class="Hero-Image">
+        <article>
+          <div class="Hero-text-container">
+            <h1>Über mich & diese Webseite</h1>
+            <p>
+              Hier erzähle ich euch etwas über mich und diese Webseite. Ich habe
+              nämlich diese Webseite dreimal programmiert und möchte erklären,
+              warum.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="section1">
+        <article>
+          <h2 data-scroll>Über den Autor</h2>
+          <p data-scroll>
+            Hallo! Ich bin Rui Zhang.
+          </p>
+          <br />
+          <p data-scroll>
+            Ich werde leider nicht besonders viel über mich erzählen, da ich so
+            anonym wie möglich bleiben möchte... ¯\_(ツ)_/¯ Aber was ich sagen
+            kann, ist, dass ich gerne im Internet nachrecherchiere und gerne auf
+            YouTube Tutorials gucke.
+          </p>
+          <br />
+          <p data-scroll>
+            Alles, was ich hier schreiben wollte, ist, dass ich kein
+            professioneller Einradfahrer bin. Ich fahre erst seid zwei Jahren und
+            habe noch nicht alles von der Einradwelt gesehen. Es kann sein, dass
+            ich diesen Satz schon ein paar mal wiederholt habe auf dieser
+            Webseite, jedoch wollte ich es nochmal betonen, sodass ihr nicht
+            allzu sauer seid, falls ich Fehler mache.
+          </p>
+        </article>
+      </section>
+      <section class="section2">
+        <div class="grid">
+          <article>
+            <h2 data-scroll>Über diese Webseite</h2>
+            <p data-scroll>
+              Der eigentliche Fokus dieser Webseite sind die alten Versionen
+              dieser Webseite (Drei Versionen). Ich habe mir sehr viel Mühe
+              genommen, die erste und zweite Webseite zu machen, und finde
+              deshalb, dass ich erklären sollte, warum ich drei Versionen
+              gemacht habe. Ich werde leider die Alte Webseite nicht wie die
+              zweite Version verlinken, da es zu sehr gelagt hat.
+            </p>
+            <br />
+            <p data-scroll>
+              Diese Webseite ist das Ergebnis einer Aufgabe von dem
+              Informatikkurs in der Schule.
+            </p>
+            <br />
+            <p data-scroll>
+              Die erste Webseite habe verworfen, da ich vieles dazugelernt habe
+              und eine neue, modernere Version erstellen wollte. Für die erste
+              Version habe ich eine Woche gebraucht. Für die zweite Version habe
+              ich auch eine Woche gebraucht. Diese Webseite sieht viel besser
+              aus als die erste Webseite, jedoch finde ich jetzt immer mehr
+              Probleme an dem Design der zweiten Version und finde die im
+              Gegensatz zu dieser Version immer unschöner.
+            </p>
+            <br />
+            <p data-scroll>
+              Eigentlich sollte die zweite Version dann auch für die Schule
+              abgegeben werden, aber dann hatten wir plötzlich doch noch ein
+              bisschen Zeit übrig (ca. 1 Monat), daher habe ich mich
+              entschieden, NOCH eine Version zu machen. Diese soll
+              minimalistischer sein und schöner, dazu soll es auch HTML5-Valide
+              sein und ich wollte noch die Galerie verbessern. Aus diesen
+              Gründen habe ich drei Versionen erstellt. Vielleicht folgt ja noch
+              eine vierte Version! Ihr könnt euch die Code-Schnipsel aus der
+              ersten Version angucken, falls es euch interessiert.
+            </p>
+          </article>
+          <img
+            class="image1 animation-from-left"
+            src="../../Images/Programming2.png"
+            alt="Schnipsel1"
+            data-scroll
+          />
+          <img
+            class="image2 animation-from-right"
+            src="../../Images/Programming3.png"
+            alt="Schnipsel2"
+            data-scroll
+          />
+        </div>
+      </section>
+      <section class="section3">
+        <article>
+          <h2 data-scroll>Kontakt</h2>
+          <p data-scroll>
+            Programmieren ist manchmal ziemlich einsam. Also falls ihr
+            irgendwelche Sachen zu sagen habt, dann könnt ihr mir hier eine
+            E-mail schreiben!
+          </p>
+          <br>
+          <p data-scroll>
+            Feedback ist erwünscht!
+          </p>
+        </article>
+        <br><br>
+        <form id="Kontakt" name="input" method="POST">
+          <input type="hidden" name="contact_number">
+          <div class="name animation-from-left" data-scroll>
+            <label>Name: </label><br>
+            <input type="text" name="user_name" id="name"><br>
+          </div>
+          <div class="email animation-from-left" data-scroll>
+            <label>E-mail: </label><br>
+            <input type="email" name="user_email" id="email"><br>
+          </div>
+          <div class="message animation-from-right" data-scroll>
+            <label>Message: </label><br>
+            <textarea name="message" id="message"></textarea><br>
+          </div>
+          <div class="submit animation-from-left" data-scroll>
+            <input type="submit" value="Email absenden!"><br>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2019 Rui Zhang</p>
+    </footer>
+  </body>
+</html>

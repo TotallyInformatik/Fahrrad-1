@@ -1,0 +1,146 @@
+body::after {
+  content: url(../../Images/GuyUnicycling.jpg), url(../../Images/Balance.jpg),
+    url(../../Images/360.jpg), url(../../Images/Wheel.jpg),
+    url(../../Images/Street.jpg), url(../../Images/Moi2.jpg);
+  display: none;
+}
+.Hero-Image {
+  background-image: url(../../Images/GuyUnicycling.jpg);
+  .Hero-text-container {
+    margin: 20vh 0 30vh 0;
+  }
+}
+.section3 {
+  background-image: url(../../Images/Street.jpg);
+  background-position: 30% 90%;
+  background-size: cover;
+  background-attachment: fixed;
+  article {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section2 .grid {
+	display: grid;
+	grid-template-areas: "roll spin flips";
+	margin: 70px 0;
+}
+.p1,
+.p2,
+.p3,
+.image1,
+.image2,
+.image3 {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.image1 {
+  transform: rotate(5deg);
+}
+.image2 {
+  transform: rotate(-3deg);
+}
+.image3 {
+  transform: rotate(-1.5deg);
+}
+.a1 {
+  grid-area: roll;
+}
+.a2 {
+  grid-area: spin;
+}
+.a3 {
+  grid-area: flips;
+}
+
+.section6 article {
+  display: grid;
+	grid-template-areas: "text img";
+	column-gap: 10%;
+	justify-content: top;
+	.text {
+		grid-area: text;
+	}
+  .image4 {
+    width: 100%;
+    margin: initial 10%;
+		transform: rotate(6deg);
+		grid-area: img;
+  }
+}
+
+.grid2 {
+  display: grid;
+  grid-template-areas: "section3 section3 section4 section4 section4";
+  .section3 {
+    grid-area: section3;
+  }
+  .section4 {
+    grid-area: section4;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .section2 .grid {
+    display: block;
+    margin: 0;
+    .a1,
+    .a2,
+    .a3 {
+      margin-top: 5%;
+      justify-items: top;
+      display: grid;
+      grid-template-areas: "img p";
+      img {
+        width: 70%;
+        margin: auto;
+        display: block;
+      }
+      p {
+        margin-right: 10%;
+      }
+    }
+  }
+  .section6 article {
+		margin-right: 5vw;
+    .image4 {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .section2 .grid {
+    .a1,
+    .a2,
+    .a3 {
+      display: block;
+      grid-template-areas: none;
+      justify-items: none;
+    }
+  }
+  .grid2 {
+    display: block;
+    column-gap: 0%;
+  }
+  .section2 {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+  }
+  .section6 article {
+    display: block;
+    .image4 {
+      margin: 10vh auto 0 auto;
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .a1,
+  .a2,
+  .a3 {
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Einrad</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <link href="CSS/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="CSS/navigation.css" rel="stylesheet" type="text/css">
+    <link href="CSS/sections.css" rel="stylesheet" type="text/css">
+    <link href="CSS/animations.css" rel="stylesheet" type="text/css">
+    <script src="Javascript/menu.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5,
+          once: true
+        });
+      });
+    </script>
+    <style>
+      body::after {
+        content: url(Images/270.jpg);
+        display: none;
+      }
+      .Hero-Image {
+        background-image: url(Images/270.jpg);
+      }
+      .Hero-text-container {
+        margin: 30vh 0 30vh 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Fahrrad -1</h2>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link-chosen"><a href="#">Home</a></li>
+          <li class="nav-link">
+            <a href="Sites/WasMachtMan/WasMachtMan.html">Was macht man?</a>
+          </li>
+          <li class="nav-link">
+            <a href="Sites/WarumEinrad/WarumEinrad.html">Warum Einrad?</a>
+          </li>
+          <li class="nav-link">
+            <a href="Sites/WieAnfangen/WieAnfangen.html">Wie anfangen?</a>
+          </li>
+          <li class="nav-link">
+              <a href="Sites/Tutorial/Tutorial.html">Tutorial</a>
+          </li>
+          <li class="nav-link">
+            <a href="Sites/Galerie/Galerie.html">Galerie</a>
+          </li>
+          <li class="nav-link">
+            <a href="Sites/AutorWebseite/AutorWebseite.html">Autor/Webseite</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-btn">
+        <div class="space"></div>
+        <div class="nav-btn-dec"></div>
+        <div class="nav-btn-dec"></div>
+        <div class="nav-btn-dec"></div>
+      </div>
+    </header>
+    <main>
+      <!-- Yaaaaaaay -->
+      <section class="Hero-Image">
+        <article>
+          <div class="Hero-text-container">
+            <h1>Einrad</h1>
+            <p>
+              Einrad fahren ist wahrscheinlich nicht das, was ihr erwartet.<br />
+              Auf dieser Webseite erzähle ich euch alles über dem Einrad, was
+              ich weiß.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="section1">
+        <article>
+          <h2 data-scroll>Einrad:</h2>
+          <p data-scroll>
+            Einrad zu fahren ist nicht langweilig und auch nicht Mädchenhaft: Es
+            gibt nämlich mehrere Sportarten, die man auf dem Einrad machen kann
+            und viele davon sind sogar ziemlich cool.
+          </p>
+          <br />
+          <p data-scroll>
+            Auf dieser Webseite, die ich für ein Schulprojekt für Informatik
+            gemacht habe, erkläre ich alles, was ich übers Einradfahren weiß.
+            Dabei solltet ihr beachten, dass ich kein Profi-Fahrer bin und
+            möglicherweise Fehler mache.
+          </p>
+          <br />
+          <p data-scroll>
+            Also, auf geht's! Ihr könnt oben auf dem Menübar auf die Seite, die
+            euch interessiert, klicken.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2019 Rui Zhang</p>
+    </footer>
+  </body>
+</html>

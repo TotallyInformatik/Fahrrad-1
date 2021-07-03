@@ -1,0 +1,49 @@
+body::after {
+  content: url(../../Images/Wheel.jpg), url(../../Images/Balance.jpg),
+    url(../../Images/Community.jpg);
+  display: none;
+}
+.Hero-Image {
+  background-image: url(../../Images/Wheel.jpg);
+  .Hero-text-container {
+    margin: 20vh 0 30vh 0;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    "section1 section1 section2 section2 section2"
+    "section3 section3 section3 section4 section4";
+  .section1 {
+    grid-area: section1;
+  }
+  .section2 {
+    grid-area: section2;
+    background-image: url(../../Images/Balance.jpg);
+    background-position: 25% 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .section3 {
+    background-image: url(../../Images/Community.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-area: section3;
+    article {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .section4 {
+    grid-area: section4;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .grid {
+    display: block;
+    .section2 {
+      background-size: cover;
+    }
+  }
+}

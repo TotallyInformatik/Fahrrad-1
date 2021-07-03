@@ -1,0 +1,63 @@
+@import "gradient.scss";
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+  padding: 70px 0;
+  width: 100%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  article {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5vw;
+    p {
+      text-align: justify;
+      font-size: 1.1em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+.section1 {
+  background: $bg-gradient3, rgb(26, 26, 26);
+}
+.section2 {
+  background: $bg-gradient3, rgb(61, 61, 61);
+}
+.section3 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section4 {
+  background: $bg-gradient1, rgb(61, 61, 61);
+}
+.section5 {
+  background: $bg-gradient4, rgb(51, 51, 51);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  article {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.section6 {
+  background: $bg-gradient3, rgb(43, 43, 43);
+}
+
+@media screen and (max-width: 1200px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    article {
+      padding: 10vw;
+    }
+  }
+}

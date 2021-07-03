@@ -1,0 +1,138 @@
+body::after {
+  content: url(../../Images/180Unispin.jpg), url(../../Images/woods2.jpg), url(../../Images/Handposition.jpg);
+  display: none;
+}
+
+.Hero-Image {
+  background-image: url(../../Images/180Unispin.jpg);
+  .Hero-text-container {
+    margin: 20vh 0 30vh 0;
+  }
+}
+
+.section1 article {
+  display: grid;
+  grid-template-areas: 
+    "text video";
+  column-gap: 10%;
+  .text {
+    grid-area: text;
+  }
+  video {
+    grid-area: video;
+    width: 90%;
+    transform: rotate(3deg);
+  }
+}
+.section3 {
+  background-image: url(../../Images/woods2.jpg);
+  background-position: 50% 70%;
+  article {
+    background-color: rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-areas: 
+      "text table";
+    column-gap: 10%;
+    .text {
+      grid-area: text;
+    }
+    table {
+      grid-area: table;
+      th {
+        text-align: left;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section3 article, .section1 article {
+    display: block;
+  }
+  .section3 table {
+    width: 100%;
+  }
+}
+
+.section2 article {
+  video {
+    width: 50%;
+    margin: 5% auto 0%;
+    display: block;
+    transform: rotate(-3deg);
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: 
+      "text image";
+    column-gap: 10%;
+    .text {
+      grid-area: text;
+    }
+    img {
+      grid-area: image;
+      width: 80%;
+      transform: rotate(3deg);
+    }
+  }
+  &:last-child {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .section2 article {
+    video {
+      width: 80%;
+    }
+    .grid {
+      display: block;
+      img {
+        width: 80%;
+        display: block;
+        margin: 5% auto 0%;
+      }
+    }
+  }
+}
+
+.section5 article {
+  background-color: rgba(0,0,0,0.3);
+  ol {
+    font-size: 1.2em;
+    border: 1px solid white;
+    list-style-position: inside;
+    padding: 50px;
+    margin: 5% auto;
+    li {
+      padding: 1em 0;
+    }
+  }
+}
+
+.section6 .grid {
+  display: grid;
+  grid-template-areas: 
+    "outspin inspin";
+  column-gap: 10%;
+  .outspin {
+    grid-area: outspin;
+    video {width: 100%}
+  }
+  .inspin {
+    grid-area: inspin;
+    video {width: 100%}
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section6 .grid {
+    display: block;
+    .outspin {
+      margin-bottom: 5%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  table {
+    padding: 10px;
+  }
+}

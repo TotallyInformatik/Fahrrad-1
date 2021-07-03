@@ -1,0 +1,140 @@
+@import "gradient.scss";
+@import "animations.scss";
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|McLaren|Montserrat|Pacifico|Raleway&display=swap");
+
+* {
+  font-family: "Montserrat", "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  hyphens: auto;
+  word-wrap: break;
+  box-sizing: border-box;
+}
+body,
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: $b-gradient, rgb(37, 37, 37);
+}
+
+p {
+  line-height: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Indie Flower", "Pacifico", cursive;
+}
+img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+a {
+  color: grey;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  &:hover,
+  &:focus {
+    color: dimgrey;
+  }
+}
+table {
+  border: 2px solid white;
+  padding: 50px;
+  td {
+    padding: 10px;
+  }
+}
+video {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Hero-Image {
+  min-width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+  opacity: 0.6;
+  display: grid;
+  box-shadow: inset 0px -10px 7px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  transition: right 1s ease;
+  article {
+    color: white;
+    background: $bg-gradient3, rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    height: inherit;
+    min-height: inherit;
+    width: 30%;
+    color: rgb(60, 60, 60);
+    margin-left: 10%;
+    overflow-y: auto;
+    .Hero-text-container {
+      p {
+        flex: 1;
+        font-size: 1.2em;
+        animation: HeroText 1s ease;
+        position: relative;
+        margin: 0 10%;
+      }
+      h1 {
+        flex: 1;
+        font-size: 4em;
+        animation: HeroText 1s ease;
+        position: relative;
+        margin: 0 10%;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1501px) {
+  .Hero-Image {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Hero-Image article {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Hero-Image {
+    height: auto;
+    min-height: none;
+    article {
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: none;
+      height: auto;
+      width: 100%;
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: inline-table;
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

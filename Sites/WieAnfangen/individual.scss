@@ -1,0 +1,62 @@
+body::after {
+  content: url(../../Images/Einrad.jpg), url(../../Images/woods.jpg);
+  display: none;
+}
+
+.Hero-Image {
+  background-image: url(../../Images/Einrad.jpg);
+  .Hero-text-container {
+    margin: 20vh 0 30vh 0;
+  }
+}
+
+.section1 article {
+  display: grid;
+  grid-template-areas: "Kaufen Kaufen Preise";
+  column-gap: 10%;
+  .Kaufen {
+    grid-area: Kaufen;
+  }
+  .Preise {
+    grid-area: Preise;
+    table {
+      width: 100%;
+      th {
+        text-align: left;
+      }
+    }
+  }
+}
+.grid {
+  display: grid;
+  grid-template-areas: "section3 section2";
+  .section3 {
+    background-image: url(../../Images/woods.jpg);
+    background-position: 50% 70%;
+    grid-area: section3;
+    a {
+      color: black;
+      &:hover,
+      &:focus {
+        color: rgb(65, 65, 65);
+      }
+    }
+  }
+  .section2 {
+    grid-area: section2;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section1 article {
+    display: block;
+  }
+  .grid {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  table {
+    padding: 10px;
+  }
+}
