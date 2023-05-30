@@ -50,7 +50,6 @@ body::after {
   .section3 article, .section1 article {
     display: block;
   }
-
   .section3 table {
     width: 100%;
   }

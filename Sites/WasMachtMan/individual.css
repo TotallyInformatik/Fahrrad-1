@@ -95,26 +95,25 @@ body::after {
     margin: 0;
   }
   .section2 .grid .a1,
-.section2 .grid .a2,
-.section2 .grid .a3 {
+  .section2 .grid .a2,
+  .section2 .grid .a3 {
     margin-top: 5%;
     justify-items: top;
     display: grid;
     grid-template-areas: "img p";
   }
   .section2 .grid .a1 img,
-.section2 .grid .a2 img,
-.section2 .grid .a3 img {
+  .section2 .grid .a2 img,
+  .section2 .grid .a3 img {
     width: 70%;
     margin: auto;
     display: block;
   }
   .section2 .grid .a1 p,
-.section2 .grid .a2 p,
-.section2 .grid .a3 p {
+  .section2 .grid .a2 p,
+  .section2 .grid .a3 p {
     margin-right: 10%;
   }
-
   .section6 article {
     margin-right: 5vw;
   }
@@ -124,25 +123,22 @@ body::after {
 }
 @media screen and (max-width: 1300px) {
   .section2 .grid .a1,
-.section2 .grid .a2,
-.section2 .grid .a3 {
+  .section2 .grid .a2,
+  .section2 .grid .a3 {
     display: block;
     grid-template-areas: none;
     justify-items: none;
   }
-
   .grid2 {
     display: block;
     -moz-column-gap: 0%;
          column-gap: 0%;
   }
-
   .section2 {
     margin: 0px;
     width: 100%;
     height: auto;
   }
-
   .section6 article {
     display: block;
   }
@@ -153,8 +149,8 @@ body::after {
 }
 @media screen and (max-width: 800px) {
   .a1 img,
-.a2 img,
-.a3 img {
+  .a2 img,
+  .a3 img {
     width: 100%;
   }
 }/*# sourceMappingURL=individual.css.map */

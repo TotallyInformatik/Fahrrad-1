@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower|McLaren|Montserrat|Pacifico|Raleway&display=swap");
 header {
-  background: linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 5%, transparent 5%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 10%, transparent 10%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 20%, transparent 20%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 40%, transparent 40%), #161616;
+  background: linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 5%, transparent 5%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 10%, transparent 10%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 20%, transparent 20%), linear-gradient(100deg, rgba(100, 100, 100, 0.1) 0%, rgba(100, 100, 100, 0.1) 40%, transparent 40%), rgb(22, 22, 22);
   height: 100px;
   width: 100%;
   z-index: 2;
@@ -67,7 +66,7 @@ header nav .nav-links .nav-link-chosen a {
     min-height: 500px;
     width: 40%;
     transition: right 1s ease;
-    background: repeating-linear-gradient(-45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), repeating-linear-gradient(45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), #1e1e1e;
+    background: repeating-linear-gradient(-45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), repeating-linear-gradient(45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), rgb(30, 30, 30);
     box-shadow: -10px 0px 7px rgba(0, 0, 0, 0.3);
   }
   header nav::-webkit-scrollbar {
@@ -82,7 +81,7 @@ header nav .nav-links .nav-link-chosen a {
     overflow-y: auto;
   }
   header nav .nav-links .nav-link,
-header nav .nav-links .nav-link-chosen {
+  header nav .nav-links .nav-link-chosen {
     font-size: 1.2em;
     display: block;
     margin: 0 30px;
@@ -95,7 +94,7 @@ header nav .nav-links .nav-link-chosen {
   header nav {
     width: 100vw;
     top: 0;
-    background: repeating-linear-gradient(-45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), repeating-linear-gradient(45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), #1e1e1e;
+    background: repeating-linear-gradient(-45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), repeating-linear-gradient(45deg, rgba(70, 70, 70, 0.04) 0%, rgba(70, 70, 70, 0.04) 2%, transparent 2%, transparent 3%, rgba(70, 70, 70, 0.04) 3%, rgba(70, 70, 70, 0.04) 7%, transparent 7%, transparent 8%, rgba(70, 70, 70, 0.04) 8%, rgba(70, 70, 70, 0.04) 10%, transparent 10%, transparent 12%), rgb(30, 30, 30);
     right: -100vw;
     font-size: 1.5em;
     overflow-y: auto;
