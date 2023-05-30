@@ -6,7 +6,6 @@ body::after {
 .Hero-Image {
   background-image: url(../../Images/Moi.jpg);
 }
-
 .Hero-Image .Hero-text-container {
   margin: 20vh 0 30vh 0;
 }
@@ -17,18 +16,15 @@ body::after {
   padding: 0;
   margin: 0;
 }
-
 .section2 .grid article {
   grid-area: text;
 }
-
 .section2 .grid .image1 {
   grid-area: img1;
   margin: 10vh auto 0;
   display: block;
   width: 80%;
 }
-
 .section2 .grid .image2 {
   grid-area: img2;
   margin: 10vh auto 0;
@@ -40,11 +36,9 @@ img {
   filter: drop-shadow(0, 0, 10px, rgba(0, 0, 0, 0.3));
   box-shadow: none;
 }
-
 img:first-of-type {
   transform: rotate(-5deg);
 }
-
 img:last-of-type {
   transform: rotate(3deg);
 }
@@ -60,19 +54,17 @@ img:last-of-type {
     display: block;
   }
 }
-
 .section3 {
   background-image: url(../../Images/woods.jpg);
   background-position: 50% 100%;
 }
-
 .section3 form {
   margin: 5%;
   display: grid;
   grid-template-areas: "name message message message" "subject message message message" "submit message message message";
-  column-gap: 2%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
 }
-
 .section3 form input,
 .section3 form textarea {
   background-color: rgba(0, 0, 0, 0.3);
@@ -81,29 +73,23 @@ img:last-of-type {
   border: 2px solid white;
   transition: background-color 0.2s linear;
 }
-
 .section3 form input:focus, .section3 form input:hover,
 .section3 form textarea:focus,
 .section3 form textarea:hover {
   background-color: rgba(100, 100, 100, 0.2);
 }
-
 .section3 form .name {
   grid-area: name;
 }
-
 .section3 form .subject {
   grid-area: subject;
 }
-
 .section3 form .message {
   grid-area: message;
 }
-
 .section3 form .submit {
   grid-area: submit;
 }
-
 .section3 form textarea {
   width: 100%;
   height: 300px;
@@ -117,4 +103,4 @@ img:last-of-type {
   .section3 form div {
     margin-top: 30px;
   }
-}
+}/*# sourceMappingURL=individual.css.map */

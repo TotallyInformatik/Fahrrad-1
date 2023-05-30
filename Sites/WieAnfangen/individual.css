@@ -42,7 +42,7 @@ body::after {
   color: black;
 }
 .grid .section3 a:hover, .grid .section3 a:focus {
-  color: #414141;
+  color: rgb(65, 65, 65);
 }
 .grid .section2 {
   grid-area: section2;
@@ -52,7 +52,6 @@ body::after {
   .section1 article {
     display: block;
   }
-
   .grid {
     display: block;
   }
